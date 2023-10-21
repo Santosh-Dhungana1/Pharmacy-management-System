@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin'smasterpage.master.cs" Inherits="view_Admin_Admin_smasterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link  rel="stylesheet" href="../../lib/css/bootstrap.min.css"/>
+    
+    <style>
+        img{
+            height:30px;
+        }
+        ^{
+            font-family:indianred;
+        }
+        .nav-link{
+            color:indianred;
+            width:100%;
+            background-color:orange;
+           
+            
+        }
+       
+    </style>
+    
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+    <div class="container-fluid">
+    <a class="navbar-brand"  >Navbar</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FF6600">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  href="Medicine.aspx"><img src="../../Images/addmediicon.png" />  Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Categories.aspx"><img src="../../Images/catgory.png" />Categories</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Seller.aspx" > <img src="../../Images/seller.jpeg" />Sellers</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="customerregistration.aspx"> <img src="../../Images/plussym.jpeg"/>Customer Registration</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active"  href="SearchSeller.aspx"><img src="../../Images/seller.jpeg" />  Search Sellers</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="Login.aspx"> <img src="../../Images/logout.jpeg" />Logout</a>
+        </li>
+       
+       
+      </ul>
+    </div>
+      <br />
+
+  </div>
+</nav>
+    <form id="form1" runat="server">
+    <div>
+        
+        <asp:ContentPlaceHolder id="Mybody" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+        <footer id="footer" style="background-color: #333333; color: #FFFFFF;">
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Copyright @Santosh<br />
+            <br />
+            <br />
+        </footer>
+    </form>
+</body>
+</html>

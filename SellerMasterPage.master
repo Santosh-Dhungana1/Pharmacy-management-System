@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SellerMasterPage.master.cs" Inherits="view_Seller_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link  rel="stylesheet" href="../../lib/css/bootstrap.min.css"/>
+    
+    <style>
+         img{
+            height:30px;
+        }
+        .nav-link{
+            color:peru;
+            
+           
+            
+        }
+        body{
+            background-color:whitesmoke;
+        }
+
+        .auto-style1 {
+            height: 78px;
+        }
+
+    </style>
+
+    
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+   
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" >Navbar</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  href="Billing.aspx"><img src="../../Images/bill.png" />Billing</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="ValidityCheck.aspx"><img src="../../Images/vali.jpeg" />Validity Check</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="User Management.aspx"><img src="../../Images/vali.jpeg" />User Management</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="Slogin.aspx"><img src="../../Images/logout.jpeg" />Logout</a>
+        </li>
+       
+      </ul>
+    </div>
+      <br />
+
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <asp:AdRotator ID="AdRotator1" runat="server" />
+    <div>
+
+        
+        <asp:ContentPlaceHolder id="Mybody" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    </form>
+</body>
+</html>
